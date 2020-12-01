@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; padding-top: 50px; color: rgb(7, 6, 3)">
+      Welcome to CRUD WebApp!!
+    </h1>
+    <div class="main_div">
+      <h1>User Login</h1>
+      <form method="GET">
+        <div class="content">
+          <input type="text" required class="email" id="email" />
+          <span></span>
+          <label>Username or Email</label>
+        </div>
+        <div class="content">
+          <input type="password" required class="pass" id="password" />
+          <span></span>
+          <label>Password</label>
+        </div>
+        <input type="submit" value="Login" class="login" id="login" />
+      </form>
+    </div>
+    <footer>&copy; 2020 Made By Shubham</footer>
+    <script>
+      const email = document.getElementById("email");
+      const pass = document.getElementById("password");
+      const login = document.getElementById("login");
+      // btnclicked = () => {
+      //   var email = document.getElementById("email");
+      //   var pass = document.getElementById("pass");
+      //   if (email === "admin" && pass === "admin") {
+      //     document.location.href = "index.html";
+      //   } else {
+      //     alert("Invalid credentials");
+      //   }
+      // };
+      login.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (email.value != "admin" && pass.value != "admin") {
+          alert("Invalid credentials");
+        } else {
+          window.location.href = "components/index.html";
+        }
+      });
+    </script>
+  </body>
+</html>

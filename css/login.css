@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, rgb(82, 161, 82), rgb(97, 97, 189));
+  height: 100vh;
+  overflow: hidden;
+}
+.main_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+}
+
+.main_div h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+.main_div form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .content {
+  position: relative;
+  border-bottom: 2px solid gray;
+  margin: 30px 0;
+}
+.content input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.content label {
+  position: absolute;
+  top: 50%;
+  color: gray;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.content span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: rgb(57, 187, 148);
+  transition: 0.5s;
+}
+.content input:focus ~ label,
+.content input:valid ~ label {
+  top: -5px;
+  color: rgb(57, 187, 148);
+}
+.content input:focus ~ span::before,
+.content input:valid ~ span::before {
+  width: 100%;
+}
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  background: rgb(57, 187, 148);
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+input[type="submit"]:hover {
+  background-color: rgb(70, 150, 132);
+  transition: 0.2s;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: blanchedalmond;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+}

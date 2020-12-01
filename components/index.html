@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>CRUD WebApp</title>
+  </head>
+  <body>
+    <a href="../login.html"><button class="logout">Logout</button></a>
+    <h1>List of Movies</h1>
+    <div class="input_div">
+      <input type="text" class="movie_name" placeholder="Enter Movie Name" />
+      <input type="text" class="release_date" placeholder="Enter Release Date" />
+      <input type="text" class="rating" placeholder="IMDB Rating" />
+      <button class="addbutton">Add</i></button>
+    </div>
+    <div class="container">
+      <table>
+        <thead>
+         <tr>
+           <th>Movie Name</th>
+           <th>Release Date</th>
+           <th>IMDB Rating</th>
+           <th>Operations</th>
+         </tr>
+        </thead>
+        <tbody id="movies-table">
+        </tbody>
+       </table>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

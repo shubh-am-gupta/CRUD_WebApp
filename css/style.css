@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: auto;
+  background-color: rgb(0, 0, 0);
+}
+h1 {
+  color: rgb(255, 0, 0);
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 250;
+  margin: 1rem 0 2rem;
+  font-family: cursive;
+}
+.logout {
+  font-size: 15px;
+  background: black;
+  color: aliceblue;
+  float: right;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.input_div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.input_div input {
+  margin-right: 40px;
+}
+.input_div .movie_name,
+.release_date,
+.rating {
+  outline: none;
+  padding: 0rem 1rem;
+  height: 50px;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  border-color: red;
+}
+.addbutton {
+  height: 60px;
+  width: 80px;
+  outline: red;
+  border: red;
+  margin-left: 5px;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.addbutton:hover {
+  opacity: 0.7;
+}
+.item {
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid white;
+}
+.iteminput {
+  background: none;
+  width: 250px;
+  outline: none;
+  color: white;
+  border: none;
+  border: 1px solid white;
+  padding: 1rem 0rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.editbutton {
+  font-size: 1.2rem;
+  font-family: cursive;
+  background: none;
+  outline: none;
+  border: none;
+  color: lime;
+  cursor: pointer;
+}
+.rembutton {
+  font-size: 1.2rem;
+  font-family: cursive;
+  background: none;
+  outline: none;
+  border: none;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.container {
+  margin: auto;
+  margin-top: 3rem;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+tr {
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+
+th {
+  width: 250px;
+  background: none;
+  outline: none;
+  table-layout: fixed;
+  color: rgb(0, 153, 255);
+  border: none;
+  border: 1px solid white;
+  padding: 1rem 0rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+tr > span {
+  width: 250px;
+  padding: 1rem 0rem;
+  text-align: center;
+}
